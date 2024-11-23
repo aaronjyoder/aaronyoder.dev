@@ -1,0 +1,156 @@
+@import 'normalize';
+@import 'reset';
+@import 'theme';
+
+:root {
+	@include root-defs;
+}
+
+.site-wrapper {
+	overflow-x: hidden;
+	position: relative;
+}
+
+.wrapper {
+	max-width: var(--page-max-width);
+	padding: 0 1.33rem;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.page-content {
+	padding-bottom: 2rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+html {
+	font-family: 'Noto Sans', sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, small {
+	line-height: 1.6; // Unsure
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1, h2 {
+	padding-top: 1.75rem;
+	padding-bottom: 0.2rem;
+}
+
+h3, h4 {
+	padding-top: 1.2rem;
+	padding-bottom: 0.1rem;
+}
+
+h5, h6 {
+	padding-top: 0.75rem;
+	padding-bottom: 0;
+}
+
+body {
+	background: var(--color-background);
+	color: var(--color-on-background);
+
+	transition: all 0.5s;
+
+	font-size: 16px;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 2.8rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.625rem;
+}
+
+h4 {
+	font-size: 1.375rem;
+}
+
+h5 {
+	font-size: 1.125rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+p {
+	font-size: 1rem;
+	margin-top: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+small {
+	font-size: 0.889rem;
+}
+
+table, th, td {
+	border: 1px solid var(--color-on-background);
+}
+
+th {
+	padding: 8px;
+	font-style: bold;
+}
+
+td {
+	padding: 8px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+/* Hyperlink/Anchor Global Styles */
+
+a:not([class]) {
+	color: currentColor;
+	text-decoration-color: var(--color-secondary);
+}
+
+// Normal
+a:link {
+	color: var(--color-primary);
+	text-decoration: none;
+}
+
+// Visited
+a:visited {
+	color: var(--color-primary); // We don't want visited links to look different
+	text-decoration: none;
+}
+
+// Hovering over link
+a:hover {
+	color: var(--color-tertiary);
+	text-decoration: underline;
+}
+
+// Link is selected/clicked down on
+a:active {
+	color: var(--color-secondary);
+	text-decoration: underline;
+}
+
+/* End Hyperlink/Anchor Global Styles */
+
+::selection {
+	color: var(--color-background); // Text color
+	background: var(--color-on-background);
+}
