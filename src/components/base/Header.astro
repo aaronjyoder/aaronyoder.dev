@@ -1,0 +1,25 @@
+---
+import Nav from './Nav.astro';
+---
+<header>
+	<div class="wrapper">
+		<div class="inner">
+			<Nav/>
+		</div>
+	</div>
+</header>
+
+<style lang="scss">
+header {
+	font-size: 1.33rem;
+	padding: 1.25rem 0;
+	
+	.inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+}
+</style>

@@ -8,6 +8,11 @@
 
 @mixin common-base {
 	--default-corner-radius: 24px;
+
+	--gradient-color-1: #4a044e;
+	--gradient-color-2: #3b0764;
+	--gradient-color-3: #1e1b4b;
+	--gradient-color-4: #020617;
 }
 
 @mixin light-theme-base {

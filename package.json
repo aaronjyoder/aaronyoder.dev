@@ -13,6 +13,11 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.9",
     "@astrojs/sitemap": "^3.2.1",
+    "@fontsource/noto-mono": "^5.1.0",
+    "@fontsource/noto-sans": "^5.1.0",
+    "@fontsource/noto-sans-display": "^5.1.0",
+    "@fontsource/noto-sans-math": "^5.1.0",
+    "@fontsource/noto-sans-mono": "^5.1.0",
     "astro": "^4.16.14",
     "typescript": "^5.6.3"
   },
