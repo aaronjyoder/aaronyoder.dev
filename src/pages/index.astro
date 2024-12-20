@@ -2,22 +2,48 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 import Card from '../components/Card.astro';
+import PersonalCard from '../components/PersonalCard.astro';
 ---
 
 <BaseLayout title="Aaron's Website & Blog" description="The portfolio and personal blog of Aaron Yoder.">
 	<div class="page-content wrapper">
-		<Card backgroundColor='hsla(0, 0%, 9%, 0.35)' foregroundColor='var(--color-on-surface)' outlineColor='rgba(48, 48, 48, 0.75)' title="Who am I?">
-			<p>
-				I'm a recent graduate from The Ohio State University with a Bachelor of Science degree in Mathematics. I enjoy making things, helping others, and solving interesting problems.
-			</p>
-			<p>
-				When I'm not coding or creating things, I enjoy photography, astronomy, and cooking. I love listening to music as well; my favorite artist is CHVRCHES, though Metric is a close second.
-			</p>
-		</Card>
+		<div class="card-grid">
+			<div class="personal-card">
+				<PersonalCard backgroundColor='hsla(0, 0%, 9%, 0.35)' foregroundColor='var(--color-on-surface)' outlineColor='rgba(48, 48, 48, 0.75)'></PersonalCard>
+			</div>
+			<div class="info-card">
+				<Card backgroundColor='hsla(0, 0%, 9%, 0.35)' foregroundColor='var(--color-on-surface)' outlineColor='rgba(48, 48, 48, 0.75)' title="Who am I?">
+					<p>
+						I'm a recent graduate from The Ohio State University with a Bachelor of Science degree in Mathematics. I enjoy making things, helping others, and solving interesting problems.
+					</p>
+					<p>
+						When I'm not coding or creating things, I enjoy photography, astronomy, and cooking. I love listening to music as well; my favorite artist is CHVRCHES, though Metric is a close second.
+					</p>
+				</Card>
+			</div>
+		</div>
 	</div>
 </BaseLayout>
 
 <style lang="scss">
+
+	.card-grid {
+		grid-template-columns: repeat(8, minmax(0, 1fr));
+		display: grid;
+		gap: 1rem;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+
+	.personal-card {
+		grid-row: span 3/span 3;
+		grid-column: span 3/span 3;
+	}
+
+	.info-card {
+		grid-row: span 2/span 2;
+		grid-column: span 5/span 5;
+	}
 
 	p {
 		font-size: 1rem;
