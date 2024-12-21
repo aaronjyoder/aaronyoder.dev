@@ -69,7 +69,7 @@ const canonicalURLString = getCanonicalURL(Astro.url.pathname);
 .gradient-bg {
   --a: 45deg;
   --l: 0%;
-  --c: rgba(74, 4, 78, 1);
+  --c: var(--gradient-color-1);
 
   display: block;
   width: 100vw;
@@ -84,9 +84,9 @@ const canonicalURLString = getCanonicalURL(Astro.url.pathname);
   background: linear-gradient(
     var(--a),
     var(--c) var(--l),
-    rgba(59, 7, 100, 1) 35%,
-    rgba(30, 27, 75, 1) 65%,
-    rgba(2, 6, 23, 1) 100%
+    var(--gradient-color-2) 35%,
+    var(--gradient-color-3) 65%,
+    var(--gradient-color-4) 100%
   );
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='500'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='8' stitchTiles='stitch'/%3E%3CfeBlend mode='screen'/%3E%3C/filter%3E%3Crect width='1000' height='1000' filter='url(%23noise)' opacity='0.9'/%3E%3C/svg%3E");
   animation: bg 15s ease infinite alternate;
@@ -95,14 +95,14 @@ const canonicalURLString = getCanonicalURL(Astro.url.pathname);
 @keyframes bg {
   from {
     --a: 0deg;
-    --c: rgba(74, 4, 78, 1);
+    --c: var(--gradient-color-1);
   }
   50% {
-    --c: rgb(112, 15, 72);
+    --c: var(--gradient-color-accent-variant);
   }
   to {
     --a: 145deg;
-    --c: rgb(160, 59, 29);
+    --c: var(--gradient-color-accent);
   }
 }
 
@@ -121,6 +121,6 @@ const canonicalURLString = getCanonicalURL(Astro.url.pathname);
 @property --c {
   syntax: "<color>";
   inherits: false;
-  initial-value: rgba(74, 4, 78, 1);
+  initial-value: var(--gradient-color-1);
 }
 </style>

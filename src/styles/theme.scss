@@ -13,6 +13,8 @@
 	--gradient-color-2: #3b0764;
 	--gradient-color-3: #1e1b4b;
 	--gradient-color-4: #020617;
+	--gradient-color-accent: #a03b1d;
+	--gradient-color-accent-variant: #700f48;
 }
 
 @mixin light-theme-base {
@@ -54,6 +56,13 @@
 	// Background color when hovering over some elements
 	--color-hover-background: #00000026;
 	--color-hover-post: #C8C3CDB3;
+
+	--gradient-color-1: #8AECF7;
+	--gradient-color-2: #FBCBCA;
+	--gradient-color-3: #E4F8FB;
+	--gradient-color-4: #8AECF7;
+	--gradient-color-accent: #9199F2;
+	--gradient-color-accent-variant: #CFCBF4;
 
 	// Shadows
 	// Surface shadow uses background color with lightness set to 60%
@@ -106,6 +115,13 @@
 	// Background color when hovering over some elements
 	--color-hover-background: #FFFFFF26;
 	--color-hover-post: #282D23B3;
+
+	--gradient-color-1: #4a044e;
+	--gradient-color-2: #3b0764;
+	--gradient-color-3: #1e1b4b;
+	--gradient-color-4: #020617;
+	--gradient-color-accent: #a03b1d;
+	--gradient-color-accent-variant: #700f48;
 
 	// Shadows
 	// Surface shadow uses background color with lightness set to 30%
