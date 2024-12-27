@@ -53,5 +53,5 @@ These are the various tools, software, and hardware I use to get things done.
 * Pixel 8 Pro (Porcelain)
   * I use my phone caseless and without a screen protector.
 * Pixel Buds Pro (Fog)
-* Pixel Watch 3
+* Pixel Watch 3 (Polished Silver Aluminum Case / Porcelain Active Band)
 * LTT Backpack
