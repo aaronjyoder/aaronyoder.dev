@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import {Content as UsesPage} from '../markdown/uses.md';
+
+import PersonalCard from '../components/PersonalCard.astro';
+import TitleCard from '../components/TitleCard.astro';
+---
+
+<BaseLayout title="Aaron's Website & Blog" description="The portfolio and personal blog of Aaron Yoder.">
+	<div class="page-content wrapper">
+		<div class="card-grid">
+			<div class="personal-card">
+				<PersonalCard backgroundColor='hsla(0, 0%, 9%, 0.35)' foregroundColor='var(--color-on-surface)' outlineColor='rgba(48, 48, 48, 0.75)'></PersonalCard>
+			</div>
+			<div class="uses-card">
+				<TitleCard backgroundColor='hsla(0, 0%, 9%, 0.35)' foregroundColor='var(--color-on-surface)' outlineColor='rgba(48, 48, 48, 0.75)' title=`/uses`>
+					<UsesPage />
+				</TitleCard>
+			</div>
+		</div>
+	</div>
+</BaseLayout>
+
+<style lang="scss" is:global >
+
+	.card-grid {
+		grid-template-columns: repeat(8, minmax(0, 1fr));
+		display: grid;
+		gap: 1rem;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+
+	.personal-card {
+		grid-row: span 3/span 3;
+		grid-column: span 3/span 3;
+	}
+
+	.uses-card {
+		grid-row: span 2/span 2;
+		grid-column: span 5/span 5;
+	}
+
+	p {
+		font-size: 1rem;
+		margin-top: 0.5rem;
+		margin-bottom: 0;
+	}
+
+	h1, h2 {
+		padding: 0;
+		margin-bottom: 0;
+		margin-top: 1rem;
+	}
+
+	h2 {
+		font-size: 1.875rem;
+		line-height: 2.25rem;
+	}
+
+	ul {
+		margin-top: .5rem;
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
+
+	li > ul {
+		margin-top: 0 !important;
+		margin-bottom: 0.25rem;
+	}
+</style>
