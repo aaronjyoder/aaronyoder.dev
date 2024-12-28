@@ -38,10 +38,6 @@ These are the various tools, software, and hardware I use to get things done.
   * uBlock Origin
   * Sponsorblock
 
-## Security & Data Management
-* Bitwarden (all platforms)
-* Aegis (for Android)
-
 ## Productivity
 * Google Tasks
 * Google Calendar
