@@ -1,0 +1,42 @@
+---
+interface Props {
+	backgroundColor?: string;
+	foregroundColor?: string;
+	outlineColor?: string;
+}
+
+const {
+backgroundColor = 'var(--color-surface)',
+foregroundColor = 'var(--color-on-surface)',
+outlineColor = 'var(--color-outline)'  } = Astro.props;
+---
+
+<li class="card">
+	<slot name="heading" />
+	<div class="body">
+		<slot name="content" />
+	</div>
+</li>
+
+<style lang="scss" define:vars={{ backgroundColor, foregroundColor, outlineColor }}>
+.card {
+  list-style: none;
+  display: block;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 12px;
+
+  border: 1px solid var(--outlineColor);
+  background: var(--backgroundColor);
+  color: var(--foregroundColor);
+
+  transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.body {
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 0;
+  transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+</style>
