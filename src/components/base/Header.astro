@@ -1,10 +1,13 @@
 ---
 import Nav from './Nav.astro';
+
+import ThemeToggle from '../../components/ThemeToggle.astro';
 ---
 <header>
 	<div class="wrapper">
 		<div class="inner">
 			<Nav/>
+			<ThemeToggle />
 		</div>
 	</div>
 </header>
@@ -12,13 +15,13 @@ import Nav from './Nav.astro';
 <style lang="scss">
 header {
   font-size: 1.33rem;
-  padding: 1.25rem 0;
 
   .inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
+
 }
 </style>
