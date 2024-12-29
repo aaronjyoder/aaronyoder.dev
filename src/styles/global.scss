@@ -57,8 +57,8 @@ h5, h6 {
 }
 
 body {
-	background: var(--color-background);
-	color: var(--color-on-background);
+	background: var(--color-surface-dim);
+	color: var(--color-on-surface);
 
 	transition: all 0.5s;
 
@@ -101,7 +101,7 @@ small {
 }
 
 table, th, td {
-	border: 1px solid var(--color-on-background);
+	border: 1px solid var(--color-on-surface);
 }
 
 th {
@@ -151,6 +151,6 @@ a:active {
 /* End Hyperlink/Anchor Global Styles */
 
 ::selection {
-	color: var(--color-background); // Text color
-	background: var(--color-on-background);
+	color: var(--color-on-primary-container); // Text color
+	background: var(--color-primary-container);
 }
