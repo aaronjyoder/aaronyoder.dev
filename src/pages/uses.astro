@@ -25,21 +25,28 @@ import TitleCard from '../components/TitleCard.astro';
 <style lang="scss" is:global >
 
 	.card-grid {
-		grid-template-columns: repeat(8, minmax(0, 1fr));
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		gap: 1rem;
 		justify-content: center;
 		margin-top: 1rem;
 	}
+	
+	@media (min-width: 768px) {
+		.card-grid {
+			display: grid;
+			grid-template-columns: repeat(8, minmax(0, 1fr));
+		}
 
-	.personal-card {
-		grid-row: span 3/span 3;
-		grid-column: span 3/span 3;
-	}
+		.personal-card {
+			grid-row: span 3/span 3;
+			grid-column: span 3/span 3;
+		}
 
-	.uses-card {
-		grid-row: span 2/span 2;
-		grid-column: span 5/span 5;
+		.uses-card {
+			grid-row: span 2/span 2;
+			grid-column: span 5/span 5;
+		}
 	}
 
 	p {
