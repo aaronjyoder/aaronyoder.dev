@@ -145,9 +145,15 @@ import social from '../data/social.json';
 
 	.links-section {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		gap: 1rem;
 		margin-top: 0.25rem;
+	}
+
+	@media (min-width: 768px) {
+		.links-section {
+			flex-direction: row;
+		}
 	}
 
 	.source-link {
