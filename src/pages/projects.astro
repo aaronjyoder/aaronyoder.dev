@@ -168,16 +168,23 @@ import social from '../data/social.json';
 	}
 
 	.card-grid {
-		grid-template-columns: repeat(8, minmax(0, 1fr));
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		gap: 1rem;
 		justify-content: center;
 		margin-top: 1rem;
 	}
 
-	.personal-card {
-		grid-row: span 3/span 3;
-		grid-column: span 3/span 3;
+	@media (min-width: 768px) {
+		.card-grid {
+			display: grid;
+			grid-template-columns: repeat(8, minmax(0, 1fr));
+		}
+
+		.personal-card {
+			grid-row: span 3/span 3;
+			grid-column: span 3/span 3;
+		}
 	}
 
 	.project-card {

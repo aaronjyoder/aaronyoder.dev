@@ -33,23 +33,31 @@ import PersonalCard from '../components/PersonalCard.astro';
 <style lang="scss">
 
 	.card-grid {
-		grid-template-columns: repeat(8, minmax(0, 1fr));
-		display: grid;
+		display: flex;
+		flex-direction: column;
+		
 		gap: 1rem;
 		justify-content: center;
 		margin-top: 1rem;
 	}
 
-	.personal-card {
-		grid-row: span 3/span 3;
-		grid-column: span 3/span 3;
-	}
+	@media (min-width: 768px) {
+		.card-grid {
+			display: grid;
+			grid-template-columns: repeat(8, minmax(0, 1fr));
+		}
 
-	.info-card {
-		grid-row: span 2/span 2;
-		grid-column: span 5/span 5;
-	}
+		.personal-card {
+			grid-row: span 3/span 3;
+			grid-column: span 3/span 3;
+		}
 
+		.info-card {
+			grid-row: span 2/span 2;
+			grid-column: span 5/span 5;
+		}
+	}
+	
 	p {
 		font-size: 1rem;
 		margin-top: 0.5rem;
