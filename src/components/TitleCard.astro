@@ -7,9 +7,9 @@ interface Props {
 }
 
 const { title,
-backgroundColor = 'var(--color-surface)',
-foregroundColor = 'var(--color-on-surface)',
-outlineColor = 'var(--color-outline)'  } = Astro.props;
+backgroundColor = 'var(--color-secondary-container)',
+foregroundColor = 'var(--color-on-secondary-container)',
+outlineColor = 'transparent'  } = Astro.props;
 ---
 
 <li class="card">
@@ -20,6 +20,7 @@ outlineColor = 'var(--color-outline)'  } = Astro.props;
 		<slot />
 	</div>
 </li>
+
 <style lang="scss" define:vars={{ backgroundColor, foregroundColor, outlineColor }}>
 .card {
   list-style: none;

@@ -20,6 +20,9 @@
 @mixin light-theme-base {
 	@include common-base;
 
+	--color-personal-card: #dbe2f9;
+	--color-on-personal-card: #131b2c;
+
 	// Primary
 	--color-primary: #435e91;
 	--color-on-primary: #ffffff;
@@ -84,6 +87,9 @@
 
 @mixin dark-theme-base {
 	@include common-base;
+
+	--color-personal-card: #4b3e76;
+	--color-on-personal-card: #e7deff;
 	
 	// Primary
 	--color-primary: #adc7ff;
