@@ -6,15 +6,16 @@ These are the various tools, software, and hardware I use to get things done.
 
 ## Editor + Terminal
 * IntelliJ IDEA (Java/Kotlin)
-* Visual Studio Code (for everything non-JVM)
+* Jetbrains Rider (C#)
+* Visual Studio Code (for everything else)
   * I've been testing out Jetbrains Fleet recently and generally prefer it over VS Code, but the plugin ecosystem keeps me on VS Code for now.
 * Windows Terminal (using cmd/PowerShell/WSL2 + Ubuntu)
 
 ## Desktop
 * Windows 11
-* AMD Ryzen 5950X
+* AMD Ryzen 9 5950X
 * Nvidia RTX 3080 10GB
-* Corsair Vengeance RGB Pro 64GB (2x32GB) DDR4-3600 CL18
+* Corsair Vengeance RGB Pro 64GB (2x32GB) DDR4-3600 CL18 RAM
 * 4TB SSD Storage
   * 2TB SN850X PCIe 4.0 SSD
   * Several WD Blue 1TB SSDs
