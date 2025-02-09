@@ -34,7 +34,7 @@ These are the various tools, software, and hardware I use to get things done.
 
 ## Software
 * Bitwarden (all platforms)
-* Aegis (for Android)
+* Aegis (for Android) / Ente Auth (for iOS)
 * Firefox (all platforms)
   * uBlock Origin
   * Sponsorblock
